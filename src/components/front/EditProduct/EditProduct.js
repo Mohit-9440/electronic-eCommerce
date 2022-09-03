@@ -88,7 +88,7 @@ toast.success('Updated Successfully!!')
             <input type='file' id='image' placeholder='Image' onChange= {(e) => handleImage(e)}/>
             <input type="text" id='description' placeholder='Description' defaultValue={product?.description} onChange= {(e) => setDescription(e.target.value)} />
             <input type="number" id='price' placeholder='Price' defaultValue={product?.price} onChange= {(e) => setPrice(e.target.value)}/>
-            <input type="number" id='ratings' placeholder='Ratings' defaultValue={product?.ratings} onChange= {(e) => setRatings(e.target.value)} />
+            <input type="number" step={0.1} min={0} max={5} id='ratings' placeholder='Ratings' defaultValue={product?.ratings} onChange= {(e) => setRatings(e.target.value)} />
             <select onChange= {(e) => setCategory(e.target.value)}>
                 <option>Wearables</option>
                 <option>Sound</option>
