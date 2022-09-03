@@ -76,14 +76,14 @@ toast.success('Added Successfully!!')
     return (
         <div className='form-box-add'>
         <form onSubmit={handleSubmit}>
-            <input type="text" id='name' className='add-name' placeholder='Name' defaultValue={name} onChange= {(e) => setName(e.target.value)}/>
-            <input type='file' id='image' placeholder='Image' onChange= {(e) => handleImage(e)}/>
-            <input type="text" id='description' placeholder='Description' defaultValue={description} onChange= {(e) => setDescription(e.target.value)} />
-            <input type="number" id='price' placeholder='Price' defaultValue={price} onChange= {(e) => setPrice(e.target.value)}/>
-            <input type="number" step={0.1} min={0} max={5} id='ratings' placeholder='Ratings' defaultValue={ratings} onChange= {(e) => setRatings(e.target.value)} />
+            <input required type="text" id='name' className='add-name' placeholder='Name' defaultValue={name} onChange= {(e) => setName(e.target.value)}/>
+            <input required type='file' id='image' placeholder='Image' onChange= {(e) => handleImage(e)}/>
+            <input required type="text" id='description' placeholder='Description' defaultValue={description} onChange= {(e) => setDescription(e.target.value)} />
+            <input required type="number" id='price' placeholder='Price' defaultValue={price} onChange= {(e) => setPrice(e.target.value)}/>
+            <input required type="number" step={0.1} min={0} max={5} id='ratings' placeholder='Ratings' defaultValue={ratings} onChange= {(e) => setRatings(e.target.value)} />
             <div className="category-select">
 
-            <select onChange= {(e) => setCategory(e.target.value)}>
+            <select required onChange= {(e) => setCategory(e.target.value)}>
                 <option>Wearables</option>
                 <option>Sound</option>
                 <option>Home</option>
