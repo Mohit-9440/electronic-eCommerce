@@ -1,0 +1,153 @@
+.products{
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #dfd1d1;
+    border-radius: 5px;
+}
+
+.card {
+    width: 300px;
+    height: 600px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 40px 20px;
+    background-color: white;
+    z-index: 90;
+    overflow: inherit;
+}
+
+.product-image {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    margin: 4px;
+    padding: 4px;
+}
+.product-details{
+    margin: 10px 0px;
+    padding-bottom: 2px;
+    font-weight: 300;
+}
+.product-name {
+    margin: 10px 0px;
+    font-weight: 700;
+}
+
+.product-price {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.product-category{
+    font-size: 14px;
+    line-height: 50px;
+} 
+.product-ratings{
+    font-size: 15px;
+    line-height: 30px;
+}
+.product-description{
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 12px;
+    line-height: 20px;
+    word-break: break-all;
+    overflow-y: scroll;
+}
+.product-description::-webkit-scrollbar {
+    /* display: none; */
+    width: 10px;
+}
+
+.product-add-button {
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    width: 80%;
+    height: 40px;
+    display: block;
+    cursor: pointer;
+    margin: 10px auto;
+}
+
+.edit-button, .delete-button{
+    font-weight: 700;
+    border-radius: 5px;
+    outline: none;
+    background-color: black;
+    color: white;
+    width: 25%;
+    height: 32px;
+    cursor: pointer;
+    margin: 12px;
+    border-left: 1px solid #e8e8e8 !important;
+    border-right: 1px solid #e8e8e8 !important;
+}
+.heart-wrapper {
+    position: relative;
+}
+.wishlist-button{
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    z-index: 1000;
+
+}
+.icon{ 
+    cursor: pointer;
+    border: none;
+} 
+.icon-selected {
+    
+    color: red;
+}
+
+.productHeader{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    width: 80%;
+    margin: 20px auto;
+}
+.productHeader select{
+    width: 250px;
+    border: 1px solid black;
+    outline: none;
+    margin: 0;
+}
+
+.card-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.card-action button{ 
+    width: 49%;
+    margin: 0;
+}
