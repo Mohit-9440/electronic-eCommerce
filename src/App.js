@@ -52,7 +52,12 @@ const App = () => {
   const handleRemoveProduct = (product) => {
     const ProductExist = cartItems.find((item) => item.id === product.id);
     if(ProductExist.quantity === 1) {
-      setCartItems(cartItems.filter((item) => item.id === product.id));
+      var index = cartItems.map(x => {return x.id;}).indexOf(product.id);
+      cartItems.splice(index, 1)
+      console.log(cartItems)
+      setCartItems(cartItems)
+      // setCartItems(cartItems.filter((item) => item.id === product.id));
+      // console.log(index)
     } else {
       setCartItems(
         cartItems.map((item) =>

@@ -33,9 +33,9 @@ const AddProduct = () => {
       
     const handleImage = async (e) => {
         setImage(e.target.files[0])
-  const base64 = await convertToBase64(e.target.files[0]); 
-  setImgbase64(base64) 
-      }
+        const base64 = await convertToBase64(e.target.files[0]); 
+        setImgbase64(base64) 
+    }
  
     let randomId = Math.floor((Math.random() * 100000) + 1);
 
